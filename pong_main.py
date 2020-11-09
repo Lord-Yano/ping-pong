@@ -1,21 +1,14 @@
 # Ping pong game using turtle module
 import turtle
+import paddles
+import window
 
-# create a window
-wn = turtle.Screen()
+# Window
+window.wn
 
-# give the window a title
-wn.title("Pinging Pong by Lord-Yano")
-
-# change window background colour
-wn.bgcolor("black")
-
-# change the size of the window
-wn.setup(width=800, height=600)
-
-# stop the window from automatically updating. Makes game faster
-wn.tracer(0)
+# Paddle A
+paddles.paddle_a
 
 # main game loop
 while True:
-    wn.update
+    window.wn.update
